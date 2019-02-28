@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 use FirstProjectmaster\Framework\TestCase;
 
-final class ShirtTest extends TestCase
+final class ShirtsTest extends TestCase
 {
 
     public function testArray()
