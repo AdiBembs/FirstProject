@@ -48,3 +48,20 @@ final class ShirtTest extends TestCase
             method_exists(Shirts::class, 'MenOrWomensShirt')
         );
     }
+    public function testGucciIsFullSleeveOrLongSleeve(): void
+    {
+        $Gucci = new Gucci();
+
+        $this->assertEquals(expected: 1, $Gucci->FullSleeveOrLongSleeve());
+
+    }
+
+    public function testGucciIsMenOrWomensShirt(): void
+    {
+        $Gucci = new Gucci();
+
+        $this->assertEquals(expected:-1, $Gucci->MenOrWomensShirt());
+
+    }
+
+}
