@@ -35,3 +35,16 @@ final class ShirtTest extends TestCase
         $this->assertclassHasAttribute('brand', Shirts::class);
 
     }
+    public function testShirtIsFullSleeveOrLongSleeve(): void
+    {
+        $this->assertTrue(
+            method_exists(Shirts::class, 'FullSleeveOrLongSleeve')
+        );
+    }
+
+    public function testShirtIsMenOrWomensShirt(): void
+    {
+        $this->assertTrue(
+            method_exists(Shirts::class, 'MenOrWomensShirt')
+        );
+    }
