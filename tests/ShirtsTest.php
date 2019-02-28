@@ -23,5 +23,15 @@ final class ShirtTest extends TestCase
         $this->assertArrayHasKey(key: 'three', $ShirtColors);
 
     }
+    public function testCanCreateGucci(): void
+    {
+        $shirt = new Gucci();
 
-    
+        $this->assertInstanceOf(expected: Gucci::class, $shirt);
+    }
+
+    public function testShirtHasBrand(): void
+    {
+        $this->assertclassHasAttribute('brand', Shirts::class);
+
+    }
