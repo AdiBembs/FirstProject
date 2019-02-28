@@ -14,12 +14,12 @@ abstract class Shirts
 
     }
 
-    public function MenOrWomensShirt() :boolean
+    public function MenOrWomenShirt() :boolean
     {
 
     }
 
-    public function shirtColorColor() :array
+    public function shirtColor() :array
     {
         $array = [
             'one' => 'blue',
