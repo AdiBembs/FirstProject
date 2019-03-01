@@ -9,7 +9,7 @@ abstract class Shirts
     public $manufacturingYear;
     public $makeLocation;
 
-    public function FullSleeveOrLongSleeve() :boolean
+    public function HalfSleeveOrLongSleeve() :boolean
     {
 
     }

@@ -17,7 +17,7 @@ final class ShirtsTest extends TestCase
 
         $shirt = new Gucci();
 
-        $ShirtColors = $shirt->shirtColorColor();
+        $ShirtColors = $shirt->shirtColor();
         $this->assertArrayHasKey('one', $ShirtColors);
         $this->assertArrayHasKey('two', $ShirtColors);
         $this->assertArrayHasKey('three', $ShirtColors);
@@ -35,10 +35,11 @@ final class ShirtsTest extends TestCase
         $this->assertclassHasAttribute('brand', Shirts::class);
 
     }
-    public function testShirtIsFullSleeveOrLongSleeve(): void
+
+    public function testShirtIsHalfSleeveOrLongSleeve(): void
     {
         $this->assertTrue(
-            method_exists(Shirts::class, 'FullSleeveOrLongSleeve')
+            method_exists(Shirts::class, 'HalfSleeveOrLongSleeve')
         );
     }
 
@@ -48,11 +49,12 @@ final class ShirtsTest extends TestCase
             method_exists(Shirts::class, 'MenOrWomensShirt')
         );
     }
-    public function testGucciIsFullSleeveOrLongSleeve(): void
+
+    public function testGucciIsHalfSleeveOrLongSleeve(): void
     {
         $Gucci = new Gucci();
 
-        $this->assertEquals(1, $Gucci->FullSleeveOrLongSleeve());
+        $this->assertEquals(true, $Gucci->HalfSleeveOrLongSleeve());
 
     }
 
@@ -60,7 +62,7 @@ final class ShirtsTest extends TestCase
     {
         $Gucci = new Gucci();
 
-        $this->assertEquals(1, $Gucci->MenOrWomensShirt());
+        $this->assertEquals(true, $Gucci->MenOrWomensShirt());
 
     }
 
