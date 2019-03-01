@@ -18,16 +18,16 @@ final class ShirtsTest extends TestCase
         $shirt = new Gucci();
 
         $ShirtColors = $shirt->shirtColorColor();
-        $this->assertArrayHasKey(key: 'one', $ShirtColors);
-        $this->assertArrayHasKey(key: 'two', $ShirtColors);
-        $this->assertArrayHasKey(key: 'three', $ShirtColors);
+        $this->assertArrayHasKey('one', $ShirtColors);
+        $this->assertArrayHasKey('two', $ShirtColors);
+        $this->assertArrayHasKey('three', $ShirtColors);
 
     }
     public function testCanCreateGucci(): void
     {
         $shirt = new Gucci();
 
-        $this->assertInstanceOf(expected: Gucci::class, $shirt);
+        $this->assertInstanceOf(Gucci::class, $shirt);
     }
 
     public function testShirtHasBrand(): void
@@ -52,7 +52,7 @@ final class ShirtsTest extends TestCase
     {
         $Gucci = new Gucci();
 
-        $this->assertEquals(expected: 1, $Gucci->FullSleeveOrLongSleeve());
+        $this->assertEquals(1, $Gucci->FullSleeveOrLongSleeve());
 
     }
 
@@ -60,7 +60,7 @@ final class ShirtsTest extends TestCase
     {
         $Gucci = new Gucci();
 
-        $this->assertEquals(expected:-1, $Gucci->MenOrWomensShirt());
+        $this->assertEquals(1, $Gucci->MenOrWomensShirt());
 
     }
 
