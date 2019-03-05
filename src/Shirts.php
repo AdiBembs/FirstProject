@@ -9,12 +9,12 @@ abstract class Shirts
     public $manufacturingYear;
     public $makeLocation;
 
-    public function HalfSleeveOrLongSleeve() :boolean
+    public function HalfSleeveOrLongSleeve(String $input) :String
     {
 
     }
 
-    public function MenOrWomenShirt() :boolean
+    public function MenOrWomenShirt(String $input) :String
     {
 
     }
