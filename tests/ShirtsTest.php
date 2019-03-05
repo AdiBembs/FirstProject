@@ -54,7 +54,7 @@ final class ShirtsTest extends TestCase
     {
         $Gucci = new Gucci();
 
-        $this->assertEquals(true, $Gucci->HalfSleeveOrLongSleeve());
+        $this->assertEquals("", $Gucci->HalfSleeveOrLongSleeve());
 
     }
 
@@ -62,7 +62,7 @@ final class ShirtsTest extends TestCase
     {
         $Gucci = new Gucci();
 
-        $this->assertEquals(true, $Gucci->MenOrWomensShirt());
+        $this->assertEquals("", $Gucci->MenOrWomensShirt());
 
     }
 
