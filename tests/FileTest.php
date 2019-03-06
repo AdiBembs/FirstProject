@@ -26,7 +26,7 @@ final class FileTest extends TestCase
 
     public function testReadCSVtoArray() {
 
-        $records = File::readCSVtoArray("data/data.csv",'Car');
+        $records = File::readCSVtoArray("data/data.csv",'Shirts');
         print_r($records);
 
     }

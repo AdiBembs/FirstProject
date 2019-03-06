@@ -18,15 +18,15 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <h3>Column 1</h3>
+            <h3>Shirt Number</h3>
             <p></p>
         </div>
         <div class="col-sm-4">
-            <h3>Column 2</h3>
+            <h3>Shirt Brand</h3>
             <p></p>
         </div>
         <div class="col-sm-4">
-            <h3>Column 3</h3>
+            <h3>Shirt Color</h3>
             <p></p>
         </div>
     </div>
