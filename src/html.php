@@ -7,7 +7,7 @@
  */
 class html {
 
-    
+
     public static function generateTable($records) {
         $count = 0;
 
