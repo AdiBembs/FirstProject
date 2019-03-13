@@ -12,5 +12,5 @@ executed.
 ... Classes should be named so that you can use the same code in the future
 with all csv files
 ... html/bag example 
-... Refactor for next week, and have dynamically property names
+... Refactor for next week, and have dynamically property name
 
