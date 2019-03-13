@@ -23,12 +23,5 @@ final class extractCSVTest extends TestCase
 
     }
 
-
-    public function testMainObject() {
-
-        $this->assertInstanceOf(Main::class, new Main());
-
-    }
-
-
 }
+
