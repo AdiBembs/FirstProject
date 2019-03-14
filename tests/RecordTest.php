@@ -27,4 +27,9 @@ final class RecordTest extends TestCase
     public function testPropertyCreated() {
         print_r('value', 'name');
     }
+
+    public function testFileObject() {
+        $this->assertInstanceOf(record::class, new record());
+    }
+
 }

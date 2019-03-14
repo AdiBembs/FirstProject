@@ -24,4 +24,9 @@ final class recordFactoryTest extends TestCase
         print_r($record);
 
     }
+
+    public function testFileObject() {
+        $this->assertInstanceOf(recordFactory::class, new recordFactory());
+    }
+
 }

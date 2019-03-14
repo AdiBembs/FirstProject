@@ -17,5 +17,10 @@ final class MainTest extends TestCase
 
     }
 
+    public function testFileObject() {
+        $this->assertInstanceOf(Main::class, new Main());
+    }
+
+
 
 }
