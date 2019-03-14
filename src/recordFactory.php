@@ -7,8 +7,8 @@
  */
 
 class recordFactory {
-    public static function create(Array $fieldNames = null, Array $values = null) {
-        $record = new record($fieldNames, $values);
+    public static function create(Array $ShirtNumber = null, Array $ShirtName = null) {
+        $record = new record($ShirtNumber, $ShirtName);
         return $record;
     }
 }

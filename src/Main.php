@@ -10,9 +10,9 @@
 
 class Main
 {
-    static public function start($filename) {
+    static public function start($nameOfFile) {
 
-        $records = extractCSV::getRecords($filename);
+        $records = extractCSV::getRecords($nameOfFile);
         $table = html::generateTable($records);
 
 

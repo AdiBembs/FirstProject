@@ -10,11 +10,11 @@ class html
 {
     public static function generateTable($records) {
 
-        $count = 0;
+        $counter = 0;
 
         foreach ($records as $record) {
 
-            if($count == 0) {
+            if($counter == 0) {
 
                 $array = $record->record::returnArray();
                 $fields = array_keys($array);
@@ -27,7 +27,7 @@ class html
                 $values = array_values($array);
                 print_r($values);
             }
-            $count++;
+            $counter++;
         }
     }
 }

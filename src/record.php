@@ -9,9 +9,9 @@
 
 class record {
 
-    public function __construct(Array $fieldNames = null, $values = null )
+    public function __construct(Array $ShirtNumber = null, $ShirtName = null )
     {
-        $record = array_combine($fieldNames, $values);
+        $record = array_combine($ShirtNumber, $ShirtName);
 
         foreach ($record as $property => $value) {
             $this->createProperty($property, $value);
@@ -25,9 +25,9 @@ class record {
         return $array;
     }
 
-    public function createProperty($name = 'one', $value = 'Gucci Strawberry Print') {
+    public function createProperty($shirtNumber = 'one', $shirtName = 'Gucci Strawberry Print') {
 
-        $this->{$name} = $value;
+        $this->{$shirtNumber} = $shirtName;
 
     }
 }
