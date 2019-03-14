@@ -21,6 +21,18 @@ final class MainTest extends TestCase
         $this->assertInstanceOf(Main::class, new Main());
     }
 
+    public function testDataDirectoryIsReadable(){
+        $this->assertDirectoryisReadable('/Users/Aditya/PhpstormProjects/TheFirstProject/Data');
+    }
+    public function testSRCDirectoryIsReadable(){
+        $this->assertDirectoryisReadable('/Users/Aditya/PhpstormProjects/TheFirstProject/src');
+    }
+    public function testTestDirectoryisReadable(){
+        $this->assertDirectoryisReadable('/Users/Aditya/PhpstormProjects/TheFirstProject/tests');
+    }
 
-
+    public function testReadCSVtoArrayExists() {
+        $this->assertTrue(
+            method_exists(Main::start(), 'readCSVtoArray'));
+    }
 }
