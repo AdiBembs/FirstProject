@@ -23,5 +23,10 @@ final class extractCSVTest extends TestCase
 
     }
 
+    public function testFileObject()
+    {
+        $this->assertInstanceOf(extractCSV::getRecords(), new extractCSV());
+    }
+
 }
 
