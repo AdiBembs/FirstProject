@@ -1,41 +1,33 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Lola
+ * User: Aditya
  * Date: 3/13/2019
- * Time: 5:53 PM
+ * Time: 3:55 PM
  */
-class html {
 
-
+class html
+{
     public static function generateTable($records) {
+
         $count = 0;
 
         foreach ($records as $record) {
+
             if($count == 0) {
 
-                $array = $record->returnArray();
-
+                $array = $record->record::returnArray();
                 $fields = array_keys($array);
-
                 $values = array_values($array);
-
                 print_r($fields);
-
                 print_r($values);
 
             } else {
-
-                $array = $record->returnArray();
-
+                $array = $record->record::returnArray();
                 $values = array_values($array);
-
                 print_r($values);
-
             }
-
             $count++;
         }
     }
-
 }
