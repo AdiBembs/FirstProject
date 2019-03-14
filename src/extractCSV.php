@@ -14,21 +14,21 @@ class extractCSV
 
         $file = fopen($filename,"r");
 
-        $fieldNames = array();
+        $nameOfFields = array();
 
-        $count = 0;
+        $counter = 0;
 
 
         while(! feof($file))
         {
 
             $record = fgetcsv($file);
-            if($count == 0) {
-                $fieldNames = $record;
+            if($counter == 0) {
+                $nameOfFields = $record;
             } else {
-                $records[] = recordFactory::create($fieldNames, $record);
+                $records[] = recordFactory::create($nameOfFields, $record);
             }
-            $count++;
+            $counter++;
         }
 
         fclose($file);

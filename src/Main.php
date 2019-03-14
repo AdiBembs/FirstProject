@@ -14,7 +14,7 @@ class Main
 
         $records = extractCSV::getRecords($nameOfFile);
         $table = html::generateTable($records);
-
+        return $table;
 
     }
 
