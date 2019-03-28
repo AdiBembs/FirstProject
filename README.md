@@ -14,3 +14,10 @@ with all csv files
 ... html/bag example 
 ... Refactor for next week, and have dynamically property name
 
+Notes 3/28/19 :
+
+Namespace - names of the folders and the classes of the names of a file 
+Top of program : use \ html \ html
+use \ html \ "that class"
+html namespaces -> each class inside different tags 
+* for next class try to get your code working like this  
